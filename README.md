@@ -20,8 +20,9 @@ IF do
 end
 
 IF do
-  disks.select{ |disk| disk.color === player }
+  var count = disks.select{ |disk| disk.color === player }
 
+  if count.length > disks.length/2 + 1
   THEN do
     Player wins.
   end
